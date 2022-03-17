@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+	text-align: center;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	min-height: 400px;
+	padding: 0 0 6em 0;
+	background-image: url("https://wallpaperaccess.com/full/1409318.jpg");
+	background-color: #111;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.container {
+	text-align: center;
+	padding: 20px;
+	height: 100vh;
+}
+
+.page-title {
+	color: #ffffff;
+	margin: 0 0 5px;
+}
+
+.page-subtitle {
+	color: #ffffff;
+	margin-top: 5px;
+}
+
+.page-logo {
+	width: 200px;
+}
+
+.alura-logo {
+	width: 40px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+table {
+	border: 2px solid white;
+}
+
+h1 {
+	color: white;
+}
+
+/*  */
+
+.formulario {
+	width: 50%;
+	padding: 2em 2em;
+	margin: 50px auto 0;
+	background-color: #f3f3f390;
+	border-radius: 15px;
+}
+
+.formulario__caixa {
+	display: grid;
+	max-width: 600px;
+	margin: 0 auto;
+	grid-template-columns: 1fr 0.3fr;
+	column-gap: 32px;
+	box-sizing: border-box;
+}
+
+.formulario__caixa-botao {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	row-gap: 16px;
+}
+
+.formulario__label {
+	display: block;
+    margin-bottom: 10px;
+	text-align: start;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+
+.formulario__input {
+	display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border: 2px solid #000;
+    border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.formulario__caixa-input input:last-child {
+	margin: 0;
+}
+
+.formulario__input--erro {
+	border: 2px solid #f00;
+}
+
+.formulario__botao {
+	display: block;
+	width: 100%;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #059bc0;
+    border: none;
+    border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+	cursor: pointer;
+    transition: 0.25s;
+}
+
+.formulario__botao--resetar {
+	background-color: #a70000;
+}
+
+.formulario__botao:hover {
+	transform: scale(0.95);
+	background-color: #0082a3;
+}
+
+.formulario__botao--resetar:hover {
+	background-color: #720000;
+}
+
+.formulario__alerta {
+	display: none;
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 0;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.formulario__alerta-erro--ativo {
+	display: block;
+	background-color: #BF300F;
+}
+
+.formulario__alerta-sucesso--ativo {
+	display: block;
+	background-color: #03974f;
+}
+
+.tabela__classificacao {
+	max-width: 85%;
+	margin: 50px auto 0;
+	border: none;
+	border-radius: 15px;
+	border-spacing: 0 0.5rem;
+	font-size: 1.2rem;
+}
+
+.tabela__linha {
+	background-color: #fff;
+}
+
+.tabela__linha td:first-child, .tabela__linha th:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.tabela__linha td:last-child, .tabela__linha th:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+.tabela__linha--cabecalho {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+th {
+	width: 150px;
+	padding: 0.25em;
+}
+
+th:first-child {
+	padding-left: 30px;
+}
+
+td {
+	padding: 1em;
+}
+
+.tabela__nome-time {
+	width: 200px;
+	text-align: left;
+	text-transform: uppercase;
+	padding-left: 100px;
+    background-size: 50px;
+    background-position: 20px;
+    background-repeat: no-repeat;
+}
+
+.tabela__botao {
+	max-width: 80%;
+	padding: 0.8em;
+	background-color: #fff;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	font-weight: bolder;
+	border-radius: 5px;
+	cursor: pointer;
+	box-sizing: content-box;
+	transition: 0.2s;
+}
+
+.tabela__botao--vitoria {
+	color: #fff;
+	background-color: #12a454;
+	border: 2px solid #fff;
+}
+
+.tabela__botao--empate {
+	color: #fff;
+	background-color: #ffc800;
+	border: 2px solid #fff;
+}
+
+.tabela__botao--derrota {
+	color: #fff;
+	background-color: #a70000;
+	border: 2px solid #fff;
+}
+
+.tabela__botao--vitoria:hover {
+	color: #12a454;
+	background-color: #fff;
+	border: 2px solid #12a454;
+	transform: scale(0.85);
+}
+
+.tabela__botao--empate:hover {
+	color: #ffc800;
+	background-color: #fff;
+	border: 2px solid #ffc800;
+	transform: scale(0.85);
+}
+
+.tabela__botao--derrota:hover {
+	color: #a70000;
+	background-color: #fff;
+	border: 2px solid #a70000;
+	transform: scale(0.85);
+}

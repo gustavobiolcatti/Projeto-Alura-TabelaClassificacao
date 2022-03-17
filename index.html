@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imersão Dev - Aula 03</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Tabela de classificação</h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+        
+        <section class="formulario">
+            <div class="formulario__caixa">
+                <div class="formulario__caixa-input">
+                    <label for="time" class="formulario__label">Nome do time:</label>
+                    <input id="time" type="name" class="formulario__input">
+
+                    <label for="logo" class="formulario__label">Link da logo:</label>
+                    <input id="logo" type="name" class="formulario__input">
+                </div>
+                
+                <div class="formulario__caixa-botao">
+                    <button onClick="adicionarJogador()" class="formulario__botao">Adicionar</button>
+                    <button onClick="removerJogador()" class="formulario__botao">Remover</button>
+                    <button onClick="resetarPontuacao()" class="formulario__botao formulario__botao--resetar">Resetar</button>
+                </div>
+            </div>
+            
+            <p id="formulario__alerta" class="formulario__alerta"></p>
+        </section>
+
+        <table class="tabela__classificacao">
+            <thead>
+                <tr class="tabela__linha tabela__linha--cabecalho">
+                    <th>Time</th>
+                    <th>Vitórias</th>
+                    <th>Empates</th>
+                    <th>Derrotas</th>
+                    <th>Pontos</th>
+                    <th colspan="3"></th>
+                </tr>
+            </thead>
+            <tbody id="tabelaJogadores">
+            </tbody>
+        </table>
+        
+        <script src="script/script.js"></script>
+    </body>
+</html>
